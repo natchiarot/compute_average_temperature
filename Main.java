@@ -38,5 +38,12 @@ public class Main {
         System.out.println();
 
         scanner.close();
+
+        for (int i = 0; i < numOfTemps; i++) {
+            if (temps[i] > avgTemp) {
+                System.out.println("The temperature for " + (i + 1) + " is greater than the average temperature.");
+            }
+        }
+        System.out.println();
     }
 }
